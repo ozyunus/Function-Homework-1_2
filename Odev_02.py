@@ -1,6 +1,5 @@
 sayi =int(input("İki basamaklı bir sayı giriniz :\n"))
 
-
 def sayiAtama(sayi):
     if sayi > 9 and sayi<100:
         sayiOkunusu(sayi)
@@ -11,7 +10,6 @@ def sayiOkunusu(sayi):
     birler = sayi % 10
     onlar = sayi // 10
     okunus = ondalikOkunus(onlar) + " " + birlikOkunus(birler)
-
     print(okunus)
 
 def ondalikOkunus(x):
@@ -34,7 +32,6 @@ def ondalikOkunus(x):
             return "Seksen"
         case _:
             return "Doksan"
-
 
 def birlikOkunus(x):
     match x:
